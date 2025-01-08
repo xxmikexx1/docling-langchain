@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "langchain-docling"
-version = "0.1.0"  # DO NOT EDIT, updated automatically
+version = "0.2.0"  # DO NOT EDIT, updated automatically
 description = "Docling LangChain integration"
 authors = ["Panos Vagenas <pva@zurich.ibm.com>"]
 license = "MIT"
