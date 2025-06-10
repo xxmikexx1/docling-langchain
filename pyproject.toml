@@ -1,6 +1,6 @@
 [project]
 name = "langchain-docling"
-version = "0.2.0"  # DO NOT EDIT, updated automatically
+version = "1.0.0"  # DO NOT EDIT, updated automatically
 description = "Docling LangChain integration"
 license = "MIT"
 license-files = ["LICENSE"]
