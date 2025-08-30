@@ -55,6 +55,24 @@ When initializing a `DoclingLoader`, you can use the following parameters:
     mode)
 - `meta_extractor` (optional): any specific metadata extractor to use
 
+### Neo4j ingestion
+
+The package also provides a helper to ingest PDF files into a Neo4j vector store
+using Docling's hybrid chunking strategy:
+
+```python
+from langchain_openai import OpenAIEmbeddings
+from langchain_docling import ingest_pdfs_to_neo4j
+
+vector_store = ingest_pdfs_to_neo4j(
+    file_paths=["/path/to/report.pdf"],
+    embedding=OpenAIEmbeddings(),
+    url="bolt://localhost:7687",
+    username="neo4j",
+    password="secret",
+)
+```
+
 ### Docs and examples
 
 For more details and usage examples, check out
